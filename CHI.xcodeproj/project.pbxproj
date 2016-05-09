@@ -16,6 +16,24 @@
 		18C8C48B1CDDD2130009578A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C8C48A1CDDD2130009578A /* HealthKit.framework */; };
 		18C8C4971CDDD49D0009578A /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C8C4941CDDD4810009578A /* ResearchKit.framework */; };
 		18C8C4981CDDD49D0009578A /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18C8C4941CDDD4810009578A /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18C8C49F1CDDD6760009578A /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C49E1CDDD6760009578A /* MasterViewController.swift */; };
+		18C8C4A11CDDD6D50009578A /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4A01CDDD6D50009578A /* HealthManager.swift */; };
+		18C8C4A51CDDD8ED0009578A /* DietTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4A41CDDD8ED0009578A /* DietTableViewController.swift */; };
+		18C8C4A71CDDD9090009578A /* WalkingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4A61CDDD9090009578A /* WalkingStepsViewController.swift */; };
+		18C8C4A91CDDD91F0009578A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4A81CDDD91F0009578A /* UserViewController.swift */; };
+		18C8C4AB1CDDD9D20009578A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4AA1CDDD9D20009578A /* LoginViewController.swift */; };
+		18C8C4AD1CDDDDCF0009578A /* SQGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4AC1CDDDDCF0009578A /* SQGraphViewController.swift */; };
+		18C8C4AF1CDDDE090009578A /* HCGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4AE1CDDDE090009578A /* HCGraphViewController.swift */; };
+		18C8C4B11CDDDE3B0009578A /* HealthDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4B01CDDDE3B0009578A /* HealthDataViewController.swift */; };
+		18C8C4B51CDDDE820009578A /* SurveyTextTask1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4B21CDDDE820009578A /* SurveyTextTask1.swift */; };
+		18C8C4B61CDDDE820009578A /* SurveyImageTask1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4B31CDDDE820009578A /* SurveyImageTask1.swift */; };
+		18C8C4B71CDDDE820009578A /* MicrophoneTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4B41CDDDE820009578A /* MicrophoneTask.swift */; };
+		18C8C4BA1CDDDE9D0009578A /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4B81CDDDE9D0009578A /* ConsentDocument.swift */; };
+		18C8C4BB1CDDDE9D0009578A /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4B91CDDDE9D0009578A /* ConsentTask.swift */; };
+		18C8C4C01CDDDEF10009578A /* AddDietController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4BF1CDDDEF10009578A /* AddDietController.swift */; };
+		18C8C4C31CDDDF2C0009578A /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C11CDDDF2C0009578A /* DateCell.swift */; };
+		18C8C4C41CDDDF2C0009578A /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C21CDDDF2C0009578A /* NumberCell.swift */; };
+		18C8C4C61CDDE19F0009578A /* SurveyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +86,24 @@
 		18C8C48A1CDDD2130009578A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		18C8C48C1CDDD2130009578A /* CHI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CHI.entitlements; sourceTree = "<group>"; };
 		18C8C48D1CDDD4810009578A /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		18C8C49E1CDDD6760009578A /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		18C8C4A01CDDD6D50009578A /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		18C8C4A41CDDD8ED0009578A /* DietTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietTableViewController.swift; sourceTree = "<group>"; };
+		18C8C4A61CDDD9090009578A /* WalkingStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkingStepsViewController.swift; sourceTree = "<group>"; };
+		18C8C4A81CDDD91F0009578A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		18C8C4AA1CDDD9D20009578A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18C8C4AC1CDDDDCF0009578A /* SQGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQGraphViewController.swift; sourceTree = "<group>"; };
+		18C8C4AE1CDDDE090009578A /* HCGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCGraphViewController.swift; sourceTree = "<group>"; };
+		18C8C4B01CDDDE3B0009578A /* HealthDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataViewController.swift; sourceTree = "<group>"; };
+		18C8C4B21CDDDE820009578A /* SurveyTextTask1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTextTask1.swift; sourceTree = "<group>"; };
+		18C8C4B31CDDDE820009578A /* SurveyImageTask1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyImageTask1.swift; sourceTree = "<group>"; };
+		18C8C4B41CDDDE820009578A /* MicrophoneTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrophoneTask.swift; sourceTree = "<group>"; };
+		18C8C4B81CDDDE9D0009578A /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		18C8C4B91CDDDE9D0009578A /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
+		18C8C4BF1CDDDEF10009578A /* AddDietController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDietController.swift; sourceTree = "<group>"; };
+		18C8C4C11CDDDF2C0009578A /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		18C8C4C21CDDDF2C0009578A /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
+		18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTaskController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +141,19 @@
 			isa = PBXGroup;
 			children = (
 				18C8C48C1CDDD2130009578A /* CHI.entitlements */,
+				18C8C4C11CDDDF2C0009578A /* DateCell.swift */,
+				18C8C4C21CDDDF2C0009578A /* NumberCell.swift */,
 				18C8C4761CDDD1760009578A /* AppDelegate.swift */,
-				18C8C4781CDDD1760009578A /* FirstViewController.swift */,
-				18C8C47A1CDDD1760009578A /* SecondViewController.swift */,
+				18C8C4B21CDDDE820009578A /* SurveyTextTask1.swift */,
+				18C8C4B31CDDDE820009578A /* SurveyImageTask1.swift */,
+				18C8C4B41CDDDE820009578A /* MicrophoneTask.swift */,
+				18C8C4BC1CDDDEA40009578A /* Consent */,
+				18C8C49D1CDDD63A0009578A /* View Controllers */,
 				18C8C47C1CDDD1760009578A /* Main.storyboard */,
 				18C8C47F1CDDD1760009578A /* Assets.xcassets */,
 				18C8C4811CDDD1760009578A /* LaunchScreen.storyboard */,
 				18C8C4841CDDD1760009578A /* Info.plist */,
+				18C8C4A01CDDD6D50009578A /* HealthManager.swift */,
 			);
 			path = CHI;
 			sourceTree = "<group>";
@@ -123,6 +165,34 @@
 				18C8C4961CDDD4810009578A /* ResearchKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		18C8C49D1CDDD63A0009578A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18C8C4BF1CDDDEF10009578A /* AddDietController.swift */,
+				18C8C4AC1CDDDDCF0009578A /* SQGraphViewController.swift */,
+				18C8C4AE1CDDDE090009578A /* HCGraphViewController.swift */,
+				18C8C4781CDDD1760009578A /* FirstViewController.swift */,
+				18C8C4B01CDDDE3B0009578A /* HealthDataViewController.swift */,
+				18C8C47A1CDDD1760009578A /* SecondViewController.swift */,
+				18C8C49E1CDDD6760009578A /* MasterViewController.swift */,
+				18C8C4A41CDDD8ED0009578A /* DietTableViewController.swift */,
+				18C8C4A61CDDD9090009578A /* WalkingStepsViewController.swift */,
+				18C8C4A81CDDD91F0009578A /* UserViewController.swift */,
+				18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */,
+				18C8C4AA1CDDD9D20009578A /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		18C8C4BC1CDDDEA40009578A /* Consent */ = {
+			isa = PBXGroup;
+			children = (
+				18C8C4B81CDDDE9D0009578A /* ConsentDocument.swift */,
+				18C8C4B91CDDDE9D0009578A /* ConsentTask.swift */,
+			);
+			name = Consent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,9 +300,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C8C4B51CDDDE820009578A /* SurveyTextTask1.swift in Sources */,
+				18C8C4C31CDDDF2C0009578A /* DateCell.swift in Sources */,
+				18C8C49F1CDDD6760009578A /* MasterViewController.swift in Sources */,
+				18C8C4A91CDDD91F0009578A /* UserViewController.swift in Sources */,
+				18C8C4C41CDDDF2C0009578A /* NumberCell.swift in Sources */,
 				18C8C47B1CDDD1760009578A /* SecondViewController.swift in Sources */,
+				18C8C4A51CDDD8ED0009578A /* DietTableViewController.swift in Sources */,
+				18C8C4B71CDDDE820009578A /* MicrophoneTask.swift in Sources */,
+				18C8C4B11CDDDE3B0009578A /* HealthDataViewController.swift in Sources */,
 				18C8C4771CDDD1760009578A /* AppDelegate.swift in Sources */,
+				18C8C4A71CDDD9090009578A /* WalkingStepsViewController.swift in Sources */,
+				18C8C4BA1CDDDE9D0009578A /* ConsentDocument.swift in Sources */,
+				18C8C4BB1CDDDE9D0009578A /* ConsentTask.swift in Sources */,
+				18C8C4C01CDDDEF10009578A /* AddDietController.swift in Sources */,
+				18C8C4AD1CDDDDCF0009578A /* SQGraphViewController.swift in Sources */,
 				18C8C4791CDDD1760009578A /* FirstViewController.swift in Sources */,
+				18C8C4B61CDDDE820009578A /* SurveyImageTask1.swift in Sources */,
+				18C8C4AB1CDDD9D20009578A /* LoginViewController.swift in Sources */,
+				18C8C4AF1CDDDE090009578A /* HCGraphViewController.swift in Sources */,
+				18C8C4A11CDDD6D50009578A /* HealthManager.swift in Sources */,
+				18C8C4C61CDDE19F0009578A /* SurveyTaskController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
