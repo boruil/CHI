@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182CB48E1CE0743B00846D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CB48D1CE0743B00846D26 /* ViewController.swift */; };
+		182CB4901CE0746100846D26 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CB48F1CE0746100846D26 /* SwiftyJSON.swift */; };
 		18C8C4771CDDD1760009578A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4761CDDD1760009578A /* AppDelegate.swift */; };
 		18C8C4791CDDD1760009578A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4781CDDD1760009578A /* FirstViewController.swift */; };
 		18C8C47B1CDDD1760009578A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C47A1CDDD1760009578A /* SecondViewController.swift */; };
@@ -34,6 +36,7 @@
 		18C8C4C31CDDDF2C0009578A /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C11CDDDF2C0009578A /* DateCell.swift */; };
 		18C8C4C41CDDDF2C0009578A /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C21CDDDF2C0009578A /* NumberCell.swift */; };
 		18C8C4C61CDDE19F0009578A /* SurveyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */; };
+		EF158441D3063402D04618AF /* Pods_CHI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AE3A876190C50C58069C77 /* Pods_CHI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		182CB48D1CE0743B00846D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		182CB48F1CE0746100846D26 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		183AC2011CE084110014FADE /* CHI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHI-Bridging-Header.h"; sourceTree = "<group>"; };
 		18C8C4731CDDD1760009578A /* CHI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C8C4761CDDD1760009578A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C8C4781CDDD1760009578A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		18C8C4C11CDDDF2C0009578A /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		18C8C4C21CDDDF2C0009578A /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
 		18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTaskController.swift; sourceTree = "<group>"; };
+		1C72965CD29F90D0A3199F24 /* Pods-CHI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHI/Pods-CHI.debug.xcconfig"; sourceTree = "<group>"; };
+		3FB532EBB67CDAB1EDC08D05 /* Pods-CHI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHI/Pods-CHI.release.xcconfig"; sourceTree = "<group>"; };
+		47AE3A876190C50C58069C77 /* Pods_CHI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,7 @@
 			files = (
 				18C8C4971CDDD49D0009578A /* ResearchKit.framework in Frameworks */,
 				18C8C48B1CDDD2130009578A /* HealthKit.framework in Frameworks */,
+				EF158441D3063402D04618AF /* Pods_CHI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +136,8 @@
 				18C8C48A1CDDD2130009578A /* HealthKit.framework */,
 				18C8C4751CDDD1760009578A /* CHI */,
 				18C8C4741CDDD1760009578A /* Products */,
+				61F4C37CA59F77F27DCCC1AC /* Pods */,
+				3D06A11EBA72590E473F59A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +152,9 @@
 		18C8C4751CDDD1760009578A /* CHI */ = {
 			isa = PBXGroup;
 			children = (
+				183AC2011CE084110014FADE /* CHI-Bridging-Header.h */,
+				182CB48D1CE0743B00846D26 /* ViewController.swift */,
+				182CB48F1CE0746100846D26 /* SwiftyJSON.swift */,
 				18C8C48C1CDDD2130009578A /* CHI.entitlements */,
 				18C8C4C11CDDDF2C0009578A /* DateCell.swift */,
 				18C8C4C21CDDDF2C0009578A /* NumberCell.swift */,
@@ -195,6 +210,23 @@
 			name = Consent;
 			sourceTree = "<group>";
 		};
+		3D06A11EBA72590E473F59A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47AE3A876190C50C58069C77 /* Pods_CHI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61F4C37CA59F77F27DCCC1AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C72965CD29F90D0A3199F24 /* Pods-CHI.debug.xcconfig */,
+				3FB532EBB67CDAB1EDC08D05 /* Pods-CHI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,10 +234,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C8C4871CDDD1760009578A /* Build configuration list for PBXNativeTarget "CHI" */;
 			buildPhases = (
+				F33F59349C50745DBD540E47 /* 📦 Check Pods Manifest.lock */,
 				18C8C46F1CDDD1760009578A /* Sources */,
 				18C8C4701CDDD1760009578A /* Frameworks */,
 				18C8C4711CDDD1760009578A /* Resources */,
 				18C8C49B1CDDD49E0009578A /* Embed Frameworks */,
+				FEE28229DCE95D47734E0239 /* 📦 Embed Pods Frameworks */,
+				F1B13A5FAD77B40ED42C28A5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -295,6 +330,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F1B13A5FAD77B40ED42C28A5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CHI/Pods-CHI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F33F59349C50745DBD540E47 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE28229DCE95D47734E0239 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CHI/Pods-CHI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18C8C46F1CDDD1760009578A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -304,9 +387,11 @@
 				18C8C4C31CDDDF2C0009578A /* DateCell.swift in Sources */,
 				18C8C49F1CDDD6760009578A /* MasterViewController.swift in Sources */,
 				18C8C4A91CDDD91F0009578A /* UserViewController.swift in Sources */,
+				182CB48E1CE0743B00846D26 /* ViewController.swift in Sources */,
 				18C8C4C41CDDDF2C0009578A /* NumberCell.swift in Sources */,
 				18C8C47B1CDDD1760009578A /* SecondViewController.swift in Sources */,
 				18C8C4A51CDDD8ED0009578A /* DietTableViewController.swift in Sources */,
+				182CB4901CE0746100846D26 /* SwiftyJSON.swift in Sources */,
 				18C8C4B71CDDDE820009578A /* MicrophoneTask.swift in Sources */,
 				18C8C4B11CDDDE3B0009578A /* HealthDataViewController.swift in Sources */,
 				18C8C4771CDDD1760009578A /* AppDelegate.swift in Sources */,
@@ -395,6 +480,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CHI/CHI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -433,18 +519,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CHI/CHI-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		18C8C4881CDDD1760009578A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C72965CD29F90D0A3199F24 /* Pods-CHI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CHI/CHI.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/twilio-ip-messaging-ios",
+					"$(PROJECT_DIR)/twilio-common-ios",
+				);
 				INFOPLIST_FILE = CHI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boruili.CHI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,12 +546,18 @@
 		};
 		18C8C4891CDDD1760009578A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FB532EBB67CDAB1EDC08D05 /* Pods-CHI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CHI/CHI.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/twilio-ip-messaging-ios",
+					"$(PROJECT_DIR)/twilio-common-ios",
+				);
 				INFOPLIST_FILE = CHI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boruili.CHI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +583,7 @@
 				18C8C4891CDDD1760009578A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
