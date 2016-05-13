@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find the word-->
+        <scene sceneID="UhM-zk-OOi">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-sYP-NV-5vg" id="sYP-NV-5vg" customClass="SurveyTaskController" customModule="CHI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEc-M6-o0F"/>
+                        <viewControllerLayoutGuide type="bottom" id="Has-h6-1be"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i3n-9w-80e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Find the familiar word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIO-uo-NDa">
+                                <rect key="frame" x="20" y="215" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-DL-x08">
+                                <rect key="frame" x="20" y="342" width="560" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start!"/>
+                                <connections>
+                                    <action selector="surveyTextTapped:" destination="sYP-NV-5vg" eventType="touchUpInside" id="UJ1-0r-HLh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="sIO-uo-NDa" secondAttribute="trailing" id="3TZ-PQ-JyQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jhd-DL-x08" secondAttribute="leading" id="IHm-9I-4M3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jhd-DL-x08" secondAttribute="trailing" id="ieS-fL-9JA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sIO-uo-NDa" secondAttribute="leading" id="kl2-0u-cI3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find the word" id="B7c-LX-H9M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRA-Ni-tsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3295" y="-1664"/>
+        </scene>
+    </scenes>
+</document>

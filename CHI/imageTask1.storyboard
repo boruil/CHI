@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find the image-->
+        <scene sceneID="uUW-Cn-2Ec">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-tEf-Ow-Ry6" id="tEf-Ow-Ry6" customClass="SurveyTaskController" customModule="CHI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E7c-9K-hYC"/>
+                        <viewControllerLayoutGuide type="bottom" id="aL0-aQ-Owh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ova-Dd-MgK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pick the different image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXZ-m0-4pu">
+                                <rect key="frame" x="20" y="214" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-7M-TUY">
+                                <rect key="frame" x="20" y="338" width="560" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start!"/>
+                                <connections>
+                                    <action selector="surveyImageTapped:" destination="tEf-Ow-Ry6" eventType="touchUpInside" id="93g-Pp-qAf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="mXZ-m0-4pu" secondAttribute="leading" id="5PD-XO-9bi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mXZ-m0-4pu" secondAttribute="trailing" id="83a-7y-hsD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Ot-7M-TUY" secondAttribute="trailing" id="nP2-Lx-VM2"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5Ot-7M-TUY" secondAttribute="leading" id="vFV-IB-V66"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find the image" id="Abj-I6-a40"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUr-FJ-gC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="-1264"/>
+        </scene>
+    </scenes>
+</document>

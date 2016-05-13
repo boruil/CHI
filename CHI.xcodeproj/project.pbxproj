@@ -36,6 +36,16 @@
 		18C8C4C31CDDDF2C0009578A /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C11CDDDF2C0009578A /* DateCell.swift */; };
 		18C8C4C41CDDDF2C0009578A /* NumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C21CDDDF2C0009578A /* NumberCell.swift */; };
 		18C8C4C61CDDE19F0009578A /* SurveyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */; };
+		18CE20B01CE5E75400F4C2CE /* HealthData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20AF1CE5E75400F4C2CE /* HealthData.storyboard */; };
+		18CE20B51CE5E76F00F4C2CE /* Tasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20B31CE5E76F00F4C2CE /* Tasks.storyboard */; };
+		18CE20B71CE5E7CD00F4C2CE /* imageTask1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20B61CE5E7CD00F4C2CE /* imageTask1.storyboard */; };
+		18CE20BA1CE5E80F00F4C2CE /* wordTask1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20B81CE5E80F00F4C2CE /* wordTask1.storyboard */; };
+		18CE20BC1CE5E85000F4C2CE /* TaskControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20BB1CE5E85000F4C2CE /* TaskControl.storyboard */; };
+		18CE20BF1CE5E90700F4C2CE /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20BD1CE5E90700F4C2CE /* Message.storyboard */; };
+		18CE20C11CE5E97D00F4C2CE /* HealthDataControl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20C01CE5E97D00F4C2CE /* HealthDataControl.storyboard */; };
+		18CE20C41CE5E9A700F4C2CE /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20C21CE5E9A700F4C2CE /* DashBoard.storyboard */; };
+		18CE20C61CE5E9E500F4C2CE /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20C51CE5E9E500F4C2CE /* User.storyboard */; };
+		18CE20C91CE5EA3500F4C2CE /* DietSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CE20C71CE5EA3500F4C2CE /* DietSelection.storyboard */; };
 		EF158441D3063402D04618AF /* Pods_CHI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47AE3A876190C50C58069C77 /* Pods_CHI.framework */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +120,16 @@
 		18C8C4C11CDDDF2C0009578A /* DateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
 		18C8C4C21CDDDF2C0009578A /* NumberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberCell.swift; sourceTree = "<group>"; };
 		18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTaskController.swift; sourceTree = "<group>"; };
+		18CE20AF1CE5E75400F4C2CE /* HealthData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthData.storyboard; sourceTree = "<group>"; };
+		18CE20B41CE5E76F00F4C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Tasks.storyboard; sourceTree = "<group>"; };
+		18CE20B61CE5E7CD00F4C2CE /* imageTask1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = imageTask1.storyboard; sourceTree = "<group>"; };
+		18CE20B91CE5E80F00F4C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/wordTask1.storyboard; sourceTree = "<group>"; };
+		18CE20BB1CE5E85000F4C2CE /* TaskControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaskControl.storyboard; sourceTree = "<group>"; };
+		18CE20BE1CE5E90700F4C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
+		18CE20C01CE5E97D00F4C2CE /* HealthDataControl.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HealthDataControl.storyboard; sourceTree = "<group>"; };
+		18CE20C31CE5E9A700F4C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DashBoard.storyboard; sourceTree = "<group>"; };
+		18CE20C51CE5E9E500F4C2CE /* User.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		18CE20C81CE5EA3500F4C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DietSelection.storyboard; sourceTree = "<group>"; };
 		1C72965CD29F90D0A3199F24 /* Pods-CHI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHI/Pods-CHI.debug.xcconfig"; sourceTree = "<group>"; };
 		3FB532EBB67CDAB1EDC08D05 /* Pods-CHI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHI.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHI/Pods-CHI.release.xcconfig"; sourceTree = "<group>"; };
 		47AE3A876190C50C58069C77 /* Pods_CHI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +185,16 @@
 				18C8C4BC1CDDDEA40009578A /* Consent */,
 				18C8C49D1CDDD63A0009578A /* View Controllers */,
 				18C8C47C1CDDD1760009578A /* Main.storyboard */,
+				18CE20C71CE5EA3500F4C2CE /* DietSelection.storyboard */,
+				18CE20C51CE5E9E500F4C2CE /* User.storyboard */,
+				18CE20C21CE5E9A700F4C2CE /* DashBoard.storyboard */,
+				18CE20C01CE5E97D00F4C2CE /* HealthDataControl.storyboard */,
+				18CE20BD1CE5E90700F4C2CE /* Message.storyboard */,
+				18CE20BB1CE5E85000F4C2CE /* TaskControl.storyboard */,
+				18CE20B81CE5E80F00F4C2CE /* wordTask1.storyboard */,
+				18CE20B61CE5E7CD00F4C2CE /* imageTask1.storyboard */,
+				18CE20B31CE5E76F00F4C2CE /* Tasks.storyboard */,
+				18CE20AF1CE5E75400F4C2CE /* HealthData.storyboard */,
 				18C8C47F1CDDD1760009578A /* Assets.xcassets */,
 				18C8C4811CDDD1760009578A /* LaunchScreen.storyboard */,
 				18C8C4841CDDD1760009578A /* Info.plist */,
@@ -322,9 +352,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE20B01CE5E75400F4C2CE /* HealthData.storyboard in Resources */,
+				18CE20B71CE5E7CD00F4C2CE /* imageTask1.storyboard in Resources */,
+				18CE20BA1CE5E80F00F4C2CE /* wordTask1.storyboard in Resources */,
+				18CE20C41CE5E9A700F4C2CE /* DashBoard.storyboard in Resources */,
 				18C8C4831CDDD1760009578A /* LaunchScreen.storyboard in Resources */,
+				18CE20C61CE5E9E500F4C2CE /* User.storyboard in Resources */,
+				18CE20BF1CE5E90700F4C2CE /* Message.storyboard in Resources */,
+				18CE20BC1CE5E85000F4C2CE /* TaskControl.storyboard in Resources */,
+				18CE20C91CE5EA3500F4C2CE /* DietSelection.storyboard in Resources */,
 				18C8C4801CDDD1760009578A /* Assets.xcassets in Resources */,
 				18C8C47E1CDDD1760009578A /* Main.storyboard in Resources */,
+				18CE20C11CE5E97D00F4C2CE /* HealthDataControl.storyboard in Resources */,
+				18CE20B51CE5E76F00F4C2CE /* Tasks.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +474,46 @@
 				18C8C4821CDDD1760009578A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		18CE20B31CE5E76F00F4C2CE /* Tasks.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CE20B41CE5E76F00F4C2CE /* Base */,
+			);
+			name = Tasks.storyboard;
+			sourceTree = "<group>";
+		};
+		18CE20B81CE5E80F00F4C2CE /* wordTask1.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CE20B91CE5E80F00F4C2CE /* Base */,
+			);
+			name = wordTask1.storyboard;
+			sourceTree = "<group>";
+		};
+		18CE20BD1CE5E90700F4C2CE /* Message.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CE20BE1CE5E90700F4C2CE /* Base */,
+			);
+			name = Message.storyboard;
+			sourceTree = "<group>";
+		};
+		18CE20C21CE5E9A700F4C2CE /* DashBoard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CE20C31CE5E9A700F4C2CE /* Base */,
+			);
+			name = DashBoard.storyboard;
+			sourceTree = "<group>";
+		};
+		18CE20C71CE5EA3500F4C2CE /* DietSelection.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CE20C81CE5EA3500F4C2CE /* Base */,
+			);
+			name = DietSelection.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
