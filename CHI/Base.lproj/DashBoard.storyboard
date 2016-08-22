@@ -63,7 +63,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6D-yQ-OmT" customClass="SQGraphViewController" customModule="CHI" customModuleProvider="target">
-                                <rect key="frame" x="10" y="72" width="580" height="258"/>
+                                <rect key="frame" x="10" y="76" width="580" height="258"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Survey Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABX-OQ-EYA">
                                         <rect key="frame" x="22" y="33" width="126" height="21"/>

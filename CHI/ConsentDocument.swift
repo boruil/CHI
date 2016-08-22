@@ -2,8 +2,7 @@
 //  ConsentDocument.swift
 //  HelloMedicalResearch
 //
-//  Created by Borui "Andy" Li on 12/7/15.
-//  Copyright © 2015 Borui "Andy" Li. All rights reserved.
+//  modified by Borui "Andy" Li on 12/7/15.
 //
 
 import Foundation

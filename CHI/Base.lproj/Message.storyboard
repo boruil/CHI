@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--#Patient Channel-->
         <scene sceneID="Up1-Kj-ZeJ">
             <objects>
-                <viewController id="JEW-Kd-GVg" customClass="ViewController" customModule="CHI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JEW-Kd-GVg" customClass="PatientMessageViewController" customModule="CHI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Epy-3d-ffb"/>
                         <viewControllerLayoutGuide type="bottom" id="l9L-RN-3jK"/>
@@ -83,7 +83,7 @@
                             <outletCollection property="gestureRecognizers" destination="UZ2-qD-Zdb" appends="YES" id="lRv-q2-SgB"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" prompt="Logging in..." id="N0Y-82-GnD"/>
+                    <navigationItem key="navigationItem" title="#Patient Channel" prompt="Logging in..." id="N0Y-82-GnD"/>
                     <connections>
                         <outlet property="bottomConstraint" destination="ute-5h-hJ9" id="OpP-Yy-zIb"/>
                         <outlet property="tableView" destination="U3t-ut-RY9" id="14n-QJ-xe6"/>
@@ -97,7 +97,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="456" y="332"/>
+            <point key="canvasLocation" x="964" y="151"/>
         </scene>
         <!--Message-->
         <scene sceneID="rB7-6w-ohR">
@@ -112,12 +112,183 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="JEW-Kd-GVg" kind="relationship" relationship="rootViewController" id="K2k-bc-Lt9"/>
+                        <segue destination="KQO-tL-OLi" kind="relationship" relationship="rootViewController" id="Wjf-bJ-E0e"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GrK-hj-2vs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-391" y="332"/>
+            <point key="canvasLocation" x="-715" y="306"/>
+        </scene>
+        <!--Message Controller-->
+        <scene sceneID="fUY-lD-1Tk">
+            <objects>
+                <tableViewController title="Master" id="KQO-tL-OLi" userLabel="Message Controller" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="OBC-bq-WV0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Community Channel " id="hea-pn-d2b">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Vf2-dJ-b6D" style="IBUITableViewCellStyleDefault" id="Uwf-3G-Ood">
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uwf-3G-Ood" id="DRK-L4-lJU">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Message Other patient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vf2-dJ-b6D">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="JEW-Kd-GVg" kind="show" id="8GN-rb-aND"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="XnY-er-DX2">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Care Provider Channel" id="2Co-nC-tAc" userLabel="fa">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="a8e-WZ-yxS" style="IBUITableViewCellStyleDefault" id="ZhG-IW-Dv4">
+                                        <rect key="frame" x="0.0" y="219.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZhG-IW-Dv4" id="GT6-bb-lio">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Message Your Care Provider" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a8e-WZ-yxS" userLabel="Eating Selection">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="1B2-u0-Xc0" kind="show" id="SLa-zJ-WwN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="KQO-tL-OLi" id="QMY-ou-BCy"/>
+                            <outlet property="delegate" destination="KQO-tL-OLi" id="LaC-Ne-jQc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Message" id="rmc-aO-07u" userLabel="Message"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9F-xB-fio" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-347"/>
+        </scene>
+        <!--#Care Provider Channel-->
+        <scene sceneID="AQH-aw-spr">
+            <objects>
+                <viewController id="1B2-u0-Xc0" customClass="DoctorMessageViewController" customModule="CHI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NVQ-4d-MRw"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Mo-eW-xEK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kwE-AJ-cmg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="say anything..." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LLo-Pd-4DG">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="tableViewTouch:" destination="1B2-u0-Xc0" eventType="touchUpInside" id="sRj-xA-F9I"/>
+                                    <outlet property="delegate" destination="1B2-u0-Xc0" id="qUm-Qv-ELT"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e1L-wQ-8Fe">
+                                <rect key="frame" x="0.0" y="102" width="600" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MessageCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" textLabel="blX-Tu-GNj" detailTextLabel="IXI-W4-pOo" rowHeight="46" style="IBUITableViewCellStyleSubtitle" id="ZKt-T1-0Uo">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKt-T1-0Uo" id="S5R-xX-WHR">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" id="blX-Tu-GNj">
+                                                    <rect key="frame" x="15" y="7" width="31.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IXI-W4-pOo">
+                                                    <rect key="frame" x="15" y="26.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="11"/>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1B2-u0-Xc0" id="Got-bb-c0c"/>
+                                    <outlet property="delegate" destination="1B2-u0-Xc0" id="erJ-ab-Mcm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="j"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LLo-Pd-4DG" firstAttribute="leading" secondItem="kwE-AJ-cmg" secondAttribute="leadingMargin" id="5GJ-Xd-oOS"/>
+                            <constraint firstItem="1Mo-eW-xEK" firstAttribute="top" secondItem="LLo-Pd-4DG" secondAttribute="bottom" constant="20" id="EJe-IP-uLc"/>
+                            <constraint firstItem="LLo-Pd-4DG" firstAttribute="trailing" secondItem="kwE-AJ-cmg" secondAttribute="trailingMargin" id="EsI-Gx-PCZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e1L-wQ-8Fe" secondAttribute="trailing" constant="-20" id="QWc-aU-ilC"/>
+                            <constraint firstItem="e1L-wQ-8Fe" firstAttribute="top" secondItem="NVQ-4d-MRw" secondAttribute="bottom" constant="8" id="cRX-qK-SZE"/>
+                            <constraint firstItem="e1L-wQ-8Fe" firstAttribute="leading" secondItem="kwE-AJ-cmg" secondAttribute="leadingMargin" constant="-20" id="ehn-qT-ZMy"/>
+                            <constraint firstItem="1Mo-eW-xEK" firstAttribute="top" secondItem="LLo-Pd-4DG" secondAttribute="bottom" constant="20" id="tpS-xO-FMY"/>
+                            <constraint firstItem="LLo-Pd-4DG" firstAttribute="top" secondItem="e1L-wQ-8Fe" secondAttribute="bottom" constant="8" id="ups-tA-XSZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tpS-xO-FMY"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="C7s-Ia-XlB" appends="YES" id="KPd-Eo-bdS"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="#Care Provider Channel" prompt="Logging in..." id="qVt-1E-aJi"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="EJe-IP-uLc" id="vFs-re-jNj"/>
+                        <outlet property="tableView" destination="e1L-wQ-8Fe" id="bKC-mW-sLp"/>
+                        <outlet property="textField" destination="LLo-Pd-4DG" id="1bi-uH-xWW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="joM-Bj-gM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="C7s-Ia-XlB">
+                    <connections>
+                        <action selector="viewTapped:" destination="1B2-u0-Xc0" id="Eya-hB-Uew"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1052" y="-1001"/>
         </scene>
     </scenes>
     <resources>

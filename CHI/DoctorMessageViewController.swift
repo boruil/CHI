@@ -1,4 +1,9 @@
 //
+
+
+// Modified by Borui "Andy" Li for this project purpose
+// Many thands and credit to the following developer for
+// the initial version
 //  ViewController.swift
 //  IPMQuickstart
 //
@@ -8,7 +13,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DoctorMessageViewController: UIViewController {
     // MARK: IP messaging memebers
     var client: TwilioIPMessagingClient? = nil
     var generalChannel: TWMChannel? = nil
@@ -29,7 +34,7 @@ class ViewController: UIViewController {
         // Fetch Access Token form the server and initialize IPM Client - this assumes you are running
         // the PHP starter app on your local machine, as instructed in the quick start guide
         let deviceId = UIDevice.currentDevice().identifierForVendor!.UUIDString
-        let urlString = "http://localhost:8000/token.php?device=\(deviceId)"
+        let urlString = "http://chi.ngrok.io/token.php?device=\(deviceId)"
         let defaultChannel = "general"
         print("+=+=+==+++++====+++++===")
         
@@ -166,7 +171,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: TwilioAccessManagerDelegate
-extension ViewController: TwilioAccessManagerDelegate {
+extension DoctorMessageViewController: TwilioAccessManagerDelegate {
     func accessManagerTokenExpired(accessManager: TwilioAccessManager!) {
         print("access token has expired")
     }
@@ -178,7 +183,7 @@ extension ViewController: TwilioAccessManagerDelegate {
 }
 
 // MARK: Twilio IP Messaging Delegate
-extension ViewController: TwilioIPMessagingClientDelegate {
+extension DoctorMessageViewController: TwilioIPMessagingClientDelegate {
     // Called whenever a channel we've joined receives a new message
     func ipMessagingClient(client: TwilioIPMessagingClient!, channel: TWMChannel!,
                            messageAdded message: TWMMessage!) {
@@ -194,7 +199,7 @@ extension ViewController: TwilioIPMessagingClientDelegate {
 }
 
 // MARK: UITextField Delegate
-extension ViewController: UITextFieldDelegate {
+extension DoctorMessageViewController: UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let msg = self.generalChannel?.messages.createMessageWithBody(textField.text!)
         self.generalChannel?.messages.sendMessage(msg) { result in
@@ -206,7 +211,7 @@ extension ViewController: UITextFieldDelegate {
 }
 
 // MARK: UITableView Delegate
-extension ViewController: UITableViewDelegate {
+extension DoctorMessageViewController: UITableViewDelegate {
     
     // Return number of rows in the table
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -228,7 +233,7 @@ extension ViewController: UITableViewDelegate {
 }
 
 // MARK: UITableViewDataSource Delegate
-extension ViewController: UITableViewDataSource {
+extension DoctorMessageViewController: UITableViewDataSource {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

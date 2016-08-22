@@ -12,8 +12,7 @@ class HealthDataViewController: UITableViewController {
   @IBOutlet var biologicalSexLabel:UILabel!
   @IBOutlet var weightLabel:UILabel!
   @IBOutlet var heightLabel:UILabel!
-  @IBOutlet var bmiLabel:UILabel!
-  
+
   var healthManager:HealthManager? = HealthManager()
   var bmi:Double?
   var height, weight:HKQuantitySample?
@@ -25,6 +24,7 @@ class HealthDataViewController: UITableViewController {
     updateHeight();
     
   }
+    
   
   func updateProfileInfo()
   {
@@ -109,7 +109,7 @@ class HealthDataViewController: UITableViewController {
     }
     var bmiString = kUnknownString
     if bmi != nil {
-        bmiLabel.text =  String(format: "%.02f", bmi!)
+//        bmiLabel.text =  String(format: "%.02f", bmi!)
     }
     
   }

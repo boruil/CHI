@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		182CB48E1CE0743B00846D26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CB48D1CE0743B00846D26 /* ViewController.swift */; };
+		180C1B511CEEF35500A54148 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180C1B501CEEF35500A54148 /* GoogleService-Info.plist */; };
+		181989361CEC75DE00B4DCC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181989351CEC75DE00B4DCC8 /* ProfileViewController.swift */; };
+		182CB48E1CE0743B00846D26 /* DoctorMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CB48D1CE0743B00846D26 /* DoctorMessageViewController.swift */; };
 		182CB4901CE0746100846D26 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182CB48F1CE0746100846D26 /* SwiftyJSON.swift */; };
+		18333D4D1CE7E7D500185F04 /* PatientMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18333D4C1CE7E7D500185F04 /* PatientMessageViewController.swift */; };
+		185792B81CF068860042CB79 /* SleepingConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185792B71CF068860042CB79 /* SleepingConditionViewController.swift */; };
 		18C8C4771CDDD1760009578A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4761CDDD1760009578A /* AppDelegate.swift */; };
 		18C8C4791CDDD1760009578A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C4781CDDD1760009578A /* FirstViewController.swift */; };
 		18C8C47B1CDDD1760009578A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8C47A1CDDD1760009578A /* SecondViewController.swift */; };
@@ -88,9 +92,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		182CB48D1CE0743B00846D26 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		180C1B501CEEF35500A54148 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		181989321CEB2BD400B4DCC8 /* CHI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHI-Bridging-Header.h"; sourceTree = "<group>"; };
+		181989351CEC75DE00B4DCC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		182CB48D1CE0743B00846D26 /* DoctorMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorMessageViewController.swift; sourceTree = "<group>"; };
 		182CB48F1CE0746100846D26 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		183AC2011CE084110014FADE /* CHI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CHI-Bridging-Header.h"; sourceTree = "<group>"; };
+		18333D4C1CE7E7D500185F04 /* PatientMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientMessageViewController.swift; sourceTree = "<group>"; };
+		185792B71CF068860042CB79 /* SleepingConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepingConditionViewController.swift; sourceTree = "<group>"; };
 		18C8C4731CDDD1760009578A /* CHI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C8C4761CDDD1760009578A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C8C4781CDDD1760009578A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +157,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185792B61CF067520042CB79 /* messaging */ = {
+			isa = PBXGroup;
+			children = (
+				182CB48D1CE0743B00846D26 /* DoctorMessageViewController.swift */,
+				18333D4C1CE7E7D500185F04 /* PatientMessageViewController.swift */,
+			);
+			name = messaging;
+			sourceTree = "<group>";
+		};
+		185792B91CF069170042CB79 /* SleepingCondition */ = {
+			isa = PBXGroup;
+			children = (
+				185792B71CF068860042CB79 /* SleepingConditionViewController.swift */,
+			);
+			name = SleepingCondition;
+			sourceTree = "<group>";
+		};
 		18C8C46A1CDDD1760009578A = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +197,9 @@
 		18C8C4751CDDD1760009578A /* CHI */ = {
 			isa = PBXGroup;
 			children = (
-				183AC2011CE084110014FADE /* CHI-Bridging-Header.h */,
-				182CB48D1CE0743B00846D26 /* ViewController.swift */,
+				181989321CEB2BD400B4DCC8 /* CHI-Bridging-Header.h */,
+				185792B91CF069170042CB79 /* SleepingCondition */,
+				185792B61CF067520042CB79 /* messaging */,
 				182CB48F1CE0746100846D26 /* SwiftyJSON.swift */,
 				18C8C48C1CDDD2130009578A /* CHI.entitlements */,
 				18C8C4C11CDDDF2C0009578A /* DateCell.swift */,
@@ -198,6 +224,7 @@
 				18C8C47F1CDDD1760009578A /* Assets.xcassets */,
 				18C8C4811CDDD1760009578A /* LaunchScreen.storyboard */,
 				18C8C4841CDDD1760009578A /* Info.plist */,
+				180C1B501CEEF35500A54148 /* GoogleService-Info.plist */,
 				18C8C4A01CDDD6D50009578A /* HealthManager.swift */,
 			);
 			path = CHI;
@@ -227,6 +254,7 @@
 				18C8C4A81CDDD91F0009578A /* UserViewController.swift */,
 				18C8C4C51CDDE19F0009578A /* SurveyTaskController.swift */,
 				18C8C4AA1CDDD9D20009578A /* LoginViewController.swift */,
+				181989351CEC75DE00B4DCC8 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -365,6 +393,7 @@
 				18C8C47E1CDDD1760009578A /* Main.storyboard in Resources */,
 				18CE20C11CE5E97D00F4C2CE /* HealthDataControl.storyboard in Resources */,
 				18CE20B51CE5E76F00F4C2CE /* Tasks.storyboard in Resources */,
+				180C1B511CEEF35500A54148 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +456,9 @@
 				18C8C4C31CDDDF2C0009578A /* DateCell.swift in Sources */,
 				18C8C49F1CDDD6760009578A /* MasterViewController.swift in Sources */,
 				18C8C4A91CDDD91F0009578A /* UserViewController.swift in Sources */,
-				182CB48E1CE0743B00846D26 /* ViewController.swift in Sources */,
+				182CB48E1CE0743B00846D26 /* DoctorMessageViewController.swift in Sources */,
 				18C8C4C41CDDDF2C0009578A /* NumberCell.swift in Sources */,
+				18333D4D1CE7E7D500185F04 /* PatientMessageViewController.swift in Sources */,
 				18C8C47B1CDDD1760009578A /* SecondViewController.swift in Sources */,
 				18C8C4A51CDDD8ED0009578A /* DietTableViewController.swift in Sources */,
 				182CB4901CE0746100846D26 /* SwiftyJSON.swift in Sources */,
@@ -443,7 +473,9 @@
 				18C8C4791CDDD1760009578A /* FirstViewController.swift in Sources */,
 				18C8C4B61CDDDE820009578A /* SurveyImageTask1.swift in Sources */,
 				18C8C4AB1CDDD9D20009578A /* LoginViewController.swift in Sources */,
+				185792B81CF068860042CB79 /* SleepingConditionViewController.swift in Sources */,
 				18C8C4AF1CDDDE090009578A /* HCGraphViewController.swift in Sources */,
+				181989361CEC75DE00B4DCC8 /* ProfileViewController.swift in Sources */,
 				18C8C4A11CDDD6D50009578A /* HealthManager.swift in Sources */,
 				18C8C4C61CDDE19F0009578A /* SurveyTaskController.swift in Sources */,
 			);
@@ -608,9 +640,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C72965CD29F90D0A3199F24 /* Pods-CHI.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CHI/CHI.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/twilio-ip-messaging-ios",
@@ -621,6 +655,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boruili.CHI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CHI/CHI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -628,9 +664,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FB532EBB67CDAB1EDC08D05 /* Pods-CHI.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CHI/CHI.entitlements;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/twilio-ip-messaging-ios",
@@ -641,6 +679,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boruili.CHI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CHI/CHI-Bridging-Header.h";
 			};
 			name = Release;
 		};

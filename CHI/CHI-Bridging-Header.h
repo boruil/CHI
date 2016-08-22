@@ -18,6 +18,6 @@
 //
 
 #import <TwilioIPMessagingClient/TwilioIPMessagingClient.h>
-
+#import <Google/SignIn.h>
 
 #endif /* CHI_Bridging_Header_h */

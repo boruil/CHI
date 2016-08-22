@@ -16,7 +16,7 @@
                             <tableViewSection headerTitle="Games" id="Wph-ej-C6T" userLabel="Games">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="7ZC-ci-bpb" style="IBUITableViewCellStyleDefault" id="T37-B3-S8F">
-                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T37-B3-S8F" id="QYE-FU-Ud9">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -41,7 +41,7 @@
                             <tableViewSection headerTitle="Survey" id="5Sx-fO-915" userLabel="Games">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qYZ-Ia-Vhg" style="IBUITableViewCellStyleDefault" id="nh4-mh-CKV">
-                                        <rect key="frame" x="0.0" y="200" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="199.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nh4-mh-CKV" id="6Tw-UU-fBD">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>

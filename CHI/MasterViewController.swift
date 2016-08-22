@@ -10,11 +10,13 @@
 import Foundation
 
 import UIKit
+import MessageUI
 
 
-class MasterViewController: UITableViewController {
+
+class MasterViewController: UITableViewController, MFMessageComposeViewControllerDelegate {
     
-    let kAuthorizeHealthKitSection = 5
+    let kAuthorizeHealthKitSection = 4
     let kProfileSegueIdentifier = "profileSegue"
     let kWorkoutSegueIdentifier = "workoutsSeque"
     
@@ -58,6 +60,34 @@ class MasterViewController: UITableViewController {
             break
         }
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    
+    // For message sending
+    @IBAction func sendMessage(sender: AnyObject) {
+        let messageVC = MFMessageComposeViewController()
+        
+        messageVC.body = "I don't feel well, please help!";
+        messageVC.recipients = ["Care Provider"]
+        messageVC.messageComposeDelegate = self;
+        
+        self.presentViewController(messageVC, animated: false, completion: nil)
+    }
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        switch (result.rawValue) {
+        case MessageComposeResultCancelled.rawValue:
+            print("Message was cancelled")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultFailed.rawValue:
+            print("Message failed")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultSent.rawValue:
+            print("Message was sent")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        default:
+            break;
+        }
     }
 }
 

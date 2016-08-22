@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>538580414080-nufesdvim15546n3660iffbe9q5u21mr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.538580414080-nufesdvim15546n3660iffbe9q5u21mr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBGW-qPXZDZY1nt0RgSKJeb-NMdUI2BZTc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>538580414080</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.boruili.CHI</string>
+	<key>PROJECT_ID</key>
+	<string>chi-ise</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chi-ise.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:538580414080:ios:feb931188050cd7a</string>
+	<key>DATABASE_URL</key>
+	<string>https://chi-ise.firebaseio.com</string>
+</dict>
+</plist>

@@ -24,10 +24,19 @@ function randomUsername() {
         'Zimmerman',
     );
 
+    $NAMES = array(
+        'USER1', 'USER2', 'USER3', 'USER4', 'USER5', 'USER6',
+        'USER7', 'USER11', 'USER14', 'USER17', 'USER20', 'USER23',
+        'USER8', 'USER12', 'USER15', 'USER18', 'USER21', 'USER24',
+        'USER9', 'USER13', 'USER16', 'USER19', 'USER22', 'USER25', 'USER26',
+        'USER10',
+    );
+
     // Choose random components of username and return it
     $adj = $ADJECTIVES[array_rand($ADJECTIVES)];
     $fn = $FIRST_NAMES[array_rand($FIRST_NAMES)];
     $ln = $LAST_NAMES[array_rand($LAST_NAMES)];
-    
-    return $adj . $fn . $ln;
+    $nm = $NAMES[array_rand($NAMES)];
+
+    return $nm;
 }

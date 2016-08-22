@@ -23,6 +23,7 @@ class HealthManager {
         readType.insert(HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierBodyMass)!)
         readType.insert(HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeight)!)
         readType.insert(HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)!)
+        readType.insert(HKObjectType.categoryTypeForIdentifier(HKCategoryTypeIdentifierSleepAnalysis)!)
         readType.insert(HKObjectType.workoutType())
         
         var writeType = Set<HKSampleType>()
@@ -32,7 +33,7 @@ class HealthManager {
         writeType.insert(HKQuantityType.workoutType())
         
         if !HKHealthStore.isHealthDataAvailable() {
-            let error = NSError(domain: "com.boruili.AR-Power", code: 2, userInfo:[NSLocalizedDescriptionKey:"HealthKit is not available in this Device"])
+            let error = NSError(domain: "com.boruili.CHI", code: 2, userInfo:[NSLocalizedDescriptionKey:"HealthKit is not available in this Device"])
             if (completion != nil) {
                 completion(success:false, error:error)
             }
